@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f3e8">
+  <meta name="description" content="Explore como a inteligência artificial pode ajudar pessoas e comunidades a proteger a água, o solo, o ar e a biodiversidade.">
+  <title>IA pela Terra — tecnologia a favor da natureza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#19392e;--muted:#66796b;--green:#286449;--lime:#d4ed88;--paper:#f4f3e8;--card:#fffef8;--line:#dce1d2;--orange:#ec815c;--shadow:0 20px 60px #19392e12}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}button,a{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #19392e15}.brand{font-family:Manrope,sans-serif;font-weight:800;font-size:19px;display:flex;align-items:center;gap:10px}.brand-mark{background:var(--green);color:white;width:34px;height:34px;border-radius:50% 50% 50% 8px;display:grid;place-items:center;font-size:18px}.topbar a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:700}.topbar a:hover{text-decoration:underline}.hero{padding:84px 0 56px;display:grid;grid-template-columns:1.13fr .87fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--green);font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase}.eyebrow:before{content:'';width:22px;height:2px;background:var(--orange)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(43px,6.2vw,72px);line-height:1.04;letter-spacing:-3.8px;margin:20px 0}.highlight{color:var(--green);position:relative;white-space:nowrap}.highlight:after{content:'';position:absolute;left:0;bottom:1px;width:100%;height:10px;background:var(--lime);z-index:-1;border-radius:8px;transform:rotate(-1deg)}.hero-copy{font-size:17px;line-height:1.75;color:var(--muted);max-width:510px;margin-bottom:26px}.primary{border:0;border-radius:100px;padding:14px 21px;background:var(--green);color:white;font-weight:700;display:inline-flex;align-items:center;gap:12px;transition:transform .2s,background .2s}.primary:hover{background:#1b5037;transform:translateY(-2px)}.hero-art{min-height:360px;position:relative;background:#dce9c8;border-radius:48% 48% 42% 42%;overflow:hidden;display:grid;place-items:center}.sun{position:absolute;width:90px;height:90px;border-radius:50%;background:#f5c984;right:17%;top:13%}.hill{position:absolute;width:130%;height:56%;bottom:-17%;left:-15%;background:#83a875;border-radius:50%}.hill.back{background:#a5bd83;width:120%;height:48%;bottom:-12%;left:-22%}.earth{z-index:2;font-size:104px;filter:drop-shadow(0 10px 8px #19392e22);transform:translateY(12px)}.orbit{position:absolute;z-index:3;display:flex;align-items:center;gap:8px;background:#fffef4;padding:10px 13px;border-radius:30px;font-size:12px;font-weight:700;box-shadow:var(--shadow)}.orbit.one{left:5%;top:25%}.orbit.two{right:4%;top:48%}.orbit.three{left:12%;bottom:14%}.orbit b{font-size:16px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}.section-head h2{font-size:clamp(27px,4vw,39px);letter-spacing:-1.6px;margin:10px 0 0}.section-head p{max-width:380px;color:var(--muted);line-height:1.6;margin:0;font-size:14px}.flow-section{padding:42px 0 90px}.flow-shell{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:32px;box-shadow:var(--shadow)}.flow-top{display:flex;align-items:center;gap:15px;margin-bottom:25px}.step-number{width:37px;height:37px;display:grid;place-items:center;border-radius:50%;background:var(--lime);font-weight:800}.flow-top h3{margin:0;font-size:17px}.flow-top p{margin:4px 0 0;font-size:13px;color:var(--muted)}.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.choice{min-height:127px;text-align:left;border:1px solid var(--line);border-radius:17px;background:#fffef8;padding:18px;color:var(--ink);transition:.2s}.choice:hover,.choice.active{border-color:var(--green);background:#eff5e4;transform:translateY(-3px)}.choice-icon{display:block;font-size:27px;margin-bottom:12px}.choice strong{display:block;font-size:14px}.choice small{display:block;color:var(--muted);font-size:12px;margin-top:5px}.connector{height:54px;display:flex;justify-content:center;align-items:center;color:#8da078;font-size:25px}.connector:before{content:'';height:29px;border-left:1px dashed #a9b69a;position:absolute;margin-top:-30px}.result{border:1px solid #dfe8cf;background:#f7f8ed;border-radius:20px;padding:24px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;min-height:170px}.result-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.3px;color:var(--green)}.result h3{font-size:22px;letter-spacing:-.7px;margin:8px 0}.result p{font-size:14px;line-height:1.65;color:var(--muted);max-width:690px;margin:0}.result-icon{width:66px;height:66px;border-radius:50%;background:var(--lime);display:grid;place-items:center;font-size:30px}.action-row{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:17px}.action-hint{font-size:12px;color:var(--muted)}.action-btn{border:1px solid var(--green);color:var(--green);background:transparent;border-radius:30px;padding:10px 16px;font-weight:700;font-size:12px}.action-btn:hover{background:var(--green);color:white}.action-detail{margin-top:13px;padding:15px 17px;border-radius:13px;background:#eaf1dc;color:#385542;font-size:13px;line-height:1.6}.action-detail[hidden]{display:none}.principles{padding:0 0 85px}.principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.principle{padding:23px;border-top:2px solid var(--green)}.principle span{font-size:23px}.principle h3{font-size:16px;margin:12px 0 7px}.principle p{color:var(--muted);font-size:13px;line-height:1.65;margin:0}.footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}.footer strong{color:var(--ink)}:focus-visible{outline:3px solid #ec815c;outline-offset:3px}
+    @media(max-width:760px){.wrap{width:min(100% - 32px,560px)}.hero{grid-template-columns:1fr;padding:55px 0 42px;gap:30px}.hero-art{min-height:290px;max-width:460px;width:100%;margin:auto}.earth{font-size:84px}.section-head{align-items:flex-start;flex-direction:column}.flow-shell{padding:22px 17px}.choices{grid-template-columns:repeat(2,1fr)}.choice{min-height:112px;padding:15px}.result{grid-template-columns:1fr auto;padding:18px}.result h3{font-size:19px}.result-icon{width:50px;height:50px;font-size:23px}.principle-grid{grid-template-columns:1fr;gap:5px}.principles{padding-bottom:55px}.flow-section{padding-bottom:65px}.footer{flex-direction:column;gap:8px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#inicio" aria-label="IA pela Terra, início"><span class="brand-mark" aria-hidden="true">↗</span> IA pela Terra</a>
+    <a href="#explorar">Explore o fluxograma <span aria-hidden="true">↓</span></a>
+  </header>
+  <main>
+    <section class="wrap hero" id="inicio">
+      <div>
+        <span class="eyebrow">Tecnologia com propósito</span>
+        <h1>Uma aliada para cuidar da <span class="highlight">nossa casa.</span></h1>
+        <p class="hero-copy">A inteligência artificial pode ajudar pessoas e comunidades a entender os desafios ambientais — e encontrar formas melhores de proteger a natureza.</p>
+        <a class="primary" href="#explorar">Descubra como <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustração da Terra cercada por natureza">
+        <span class="sun"></span><span class="hill back"></span><span class="hill"></span>
+        <span class="earth" aria-hidden="true">🌍</span>
+        <span class="orbit one"><b>💧</b> água limpa</span><span class="orbit two"><b>🌱</b> vida no solo</span><span class="orbit three"><b>🐝</b> biodiversidade</span>
+      </div>
+    </section>
+    <section class="wrap flow-section" id="explorar">
+      <div class="section-head"><div><span class="eyebrow">Um problema de cada vez</span><h2>Onde você quer fazer a diferença?</h2></div><p>Escolha uma área para ver como a IA pode apoiar a proteção ambiental e o que podemos fazer juntos.</p></div>
+      <div class="flow-shell">
+        <div class="flow-top"><span class="step-number">1</span><div><h3>Escolha um desafio ambiental</h3><p>Selecione um botão para seguir o fluxograma.</p></div></div>
+        <div class="choices" role="group" aria-label="Escolha uma área ambiental">
+          <button class="choice active" data-topic="agua" aria-pressed="true"><span class="choice-icon" aria-hidden="true">💧</span><strong>Água</strong><small>Rios, oceanos e consumo</small></button>
+          <button class="choice" data-topic="solo" aria-pressed="false"><span class="choice-icon" aria-hidden="true">🌱</span><strong>Solo e florestas</strong><small>Desmatamento e saúde do solo</small></button>
+          <button class="choice" data-topic="ar" aria-pressed="false"><span class="choice-icon" aria-hidden="true">🌬️</span><strong>Ar e clima</strong><small>Poluição e mudanças climáticas</small></button>
+          <button class="choice" data-topic="vida" aria-pressed="false"><span class="choice-icon" aria-hidden="true">🦋</span><strong>Animais e plantas</strong><small>Espécies e biodiversidade</small></button>
+        </div>
+        <div class="connector" aria-hidden="true">↓</div>
+        <div class="flow-top"><span class="step-number">2</span><div><h3>Veja a tecnologia em ação</h3><p>O que a inteligência artificial pode ajudar a fazer?</p></div></div>
+        <article class="result" aria-live="polite" aria-atomic="true">
+          <div><span class="result-label" id="result-label">Água · monitoramento inteligente</span><h3 id="result-title">Detectar problemas antes que se espalhem</h3><p id="result-description">Modelos de IA podem analisar imagens de satélite e dados de sensores para identificar mudanças na qualidade da água, acompanhar algas nocivas e sinalizar possíveis focos de poluição em rios e lagos.</p></div>
+          <span class="result-icon" id="result-icon" aria-hidden="true">💧</span>
+        </article>
+        <div class="action-row"><span class="action-hint">A tecnologia ajuda — mas a decisão e o cuidado são de todos.</span><button class="action-btn" id="action-button" aria-expanded="false" aria-controls="action-detail">O que podemos fazer? <span aria-hidden="true">＋</span></button></div>
+        <div class="action-detail" id="action-detail" hidden>Reduza o desperdício, descarte óleo e produtos químicos corretamente e participe de ações locais de cuidado com rios e nascentes. Resultados de IA devem ser verificados por especialistas e pelas comunidades.</div>
+      </div>
+    </section>
+    <section class="wrap principles">
+      <div class="section-head"><div><span class="eyebrow">Tecnologia responsável</span><h2>IA não age sozinha.</h2></div><p>Para ser uma aliada de verdade, a tecnologia precisa respeitar a natureza e as pessoas.</p></div>
+      <div class="principle-grid">
+        <article class="principle"><span aria-hidden="true">🧑‍🤝‍🧑</span><h3>Pessoas no centro</h3><p>Comunidades, pesquisadores e profissionais locais ajudam a interpretar dados e decidir os próximos passos.</p></article>
+        <article class="principle"><span aria-hidden="true">🔎</span><h3>Dados com cuidado</h3><p>Previsões podem errar ou refletir dados incompletos. Verificação humana e transparência são essenciais.</p></article>
+        <article class="principle"><span aria-hidden="true">🌿</span><h3>Impacto positivo</h3><p>Usar IA também consome energia e recursos. Vale buscar soluções eficientes e benefícios ambientais concretos.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span><strong>IA pela Terra</strong> · ideias para um futuro mais sustentável</span><span>Informação e tecnologia a serviço da vida.</span></footer>
+  <script>
+    const topics={
+      agua:{label:'Água · monitoramento inteligente',title:'Detectar problemas antes que se espalhem',description:'Modelos de IA podem analisar imagens de satélite e dados de sensores para identificar mudanças na qualidade da água, acompanhar algas nocivas e sinalizar possíveis focos de poluição em rios e lagos.',icon:'💧',action:'Reduza o desperdício, descarte óleo e produtos químicos corretamente e participe de ações locais de cuidado com rios e nascentes. Resultados de IA devem ser verificados por especialistas e pelas comunidades.'},
+      solo:{label:'Solo e florestas · observação da paisagem',title:'Proteger florestas e recuperar áreas degradadas',description:'Ao comparar imagens de satélite ao longo do tempo, sistemas de IA podem ajudar a localizar sinais de desmatamento, mapear áreas queimadas e acompanhar a recuperação de florestas e a saúde do solo.',icon:'🌱',action:'Valorize produtos de origem responsável, apoie iniciativas de restauração e denuncie desmatamento às autoridades competentes. Imagens e alertas precisam de validação no território.'},
+      ar:{label:'Ar e clima · previsão e prevenção',title:'Antecipar riscos e planejar cidades mais saudáveis',description:'A IA pode combinar dados meteorológicos e sensores para prever episódios de poluição, estimar riscos de incêndios e ajudar cidades a planejar rotas, transportes e espaços verdes que reduzam impactos.',icon:'🌬️',action:'Prefira caminhar, pedalar ou usar transporte coletivo quando possível; economize energia e apoie políticas de ar limpo. Previsões são ferramentas de apoio, não substituem alertas oficiais.'},
+      vida:{label:'Animais e plantas · biodiversidade',title:'Acompanhar espécies sem perturbar seus habitats',description:'Algoritmos podem ajudar a identificar espécies em fotos, gravações de sons e armadilhas fotográficas, apoiando pesquisadores a monitorar animais, detectar espécies invasoras e proteger habitats.',icon:'🦋',action:'Respeite áreas naturais, não alimente animais silvestres e compartilhe observações de espécies em projetos de ciência cidadã confiáveis. Proteja dados de localização de espécies ameaçadas.'}
+    };
+    const buttons=document.querySelectorAll('.choice');
+    const actionButton=document.getElementById('action-button');
+    const actionDetail=document.getElementById('action-detail');
+    buttons.forEach(button=>button.addEventListener('click',()=>{
+      const topic=topics[button.dataset.topic];
+      buttons.forEach(item=>{const selected=item===button;item.classList.toggle('active',selected);item.setAttribute('aria-pressed',String(selected));});
+      document.getElementById('result-label').textContent=topic.label;
+      document.getElementById('result-title').textContent=topic.title;
+      document.getElementById('result-description').textContent=topic.description;
+      document.getElementById('result-icon').textContent=topic.icon;
+      actionDetail.textContent=topic.action;
+      actionDetail.hidden=true;
+      actionButton.setAttribute('aria-expanded','false');
+      actionButton.innerHTML='O que podemos fazer? <span aria-hidden="true">＋</span>';
+    }));
+    actionButton.addEventListener('click',()=>{
+      const expanded=actionButton.getAttribute('aria-expanded')==='true';
+      actionButton.setAttribute('aria-expanded',String(!expanded));
+      actionDetail.hidden=expanded;
+      actionButton.innerHTML=expanded?'O que podemos fazer? <span aria-hidden="true">＋</span>':'O que podemos fazer? <span aria-hidden="true">−</span>';
+    });
+  </script>
+</body>
+</html>
